@@ -1,0 +1,123 @@
+@import 'normalize.css'
+@import 'reset.css'
+
+$luckiest: 'Luckiest Guy', cursive
+*
+   box-sizing: border-box
+
+html
+   font-size: 62.5%
+body
+   font-family: 'Luckiest Guy', cursive
+   background: #d6d6d6
+.container
+   padding: 2rem
+   overflow: hidden
+   margin: 0 auto
+
+//////////////////////////////////////////////// 
+.nav-content
+   background: #FE4A49
+   padding-left: 3rem
+   padding-right: 3rem
+   display: flex
+   justify-content: space-between
+   &__heading
+      font-size: 5.7rem
+      color: #fff
+   ul
+      display: flex
+      // margin-left: 60%
+      font-size: 2.5rem
+   li
+      margin-right: 7rem
+      margin-top: 1.5rem
+      &:last-child
+         margin-right: 0
+   a
+      text-decoration: none
+      color: #fff
+   &__activ-html
+      &::after
+         content: '_'
+         background: #fff
+         font-size: .4rem
+         display: block
+.tasks
+   display: grid
+   grid-template-columns: 82% 18%
+.equation
+   font-size: 18rem
+   background: #ffffff
+   text-align: center
+   border-radius: 3px
+   padding-top: 15%
+   margin-right: 1.5rem
+   box-shadow: 0 0 15px 1px #5f5f5f
+   h1
+      display: inline
+      padding: 2rem
+.answer
+   font-size: 15rem
+   text-align: center
+   color: #fff
+   h1
+      cursor: pointer
+      border-radius: 3px
+      margin-bottom: 1rem
+      padding: 2rem
+      width: 100%
+      &:last-child
+         margin-bottom: 0
+   &__answer1
+      box-shadow: 0 0 15px 1px #5f5f5f
+      background: #FE4A49
+      transition: 1s
+      &:hover
+         background: #ffffff
+         color: #FE4A49
+   &__answer2
+      box-shadow: 0 0 15px 1px #5f5f5f
+      background: #2AB7CA
+      transition: 1s
+      &:hover
+         background: #ffffff
+         color: #2AB7CA
+   &__answer3
+      box-shadow: 0 0 15px 1px #5f5f5f
+      background: #FED766
+      transition: 1s
+      &:hover
+         background: #ffffff
+         color: #FED766
+
+@media screen and (max-width: 1100px)
+   html
+      font-size: 58%
+@media screen and (max-width: 998px)
+   html
+      font-size: 34%
+   .nav-content
+      width: 100%
+      text-align: center
+      display: block
+      ul
+         display: flex
+         justify-content: center
+   .tasks
+      display: block
+   .equation
+      margin-right: 0
+      margin-bottom: 2rem
+      padding: 10rem
+   .answer
+      display: flex
+      h1
+         margin-bottom: 0
+         margin-right: 1rem
+         &:last-child
+            margin-right: 0
+
+@media screen and (max-width: 576px)
+   html
+      font-size: 20%
